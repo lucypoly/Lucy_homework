@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>border-image</title>
+	<style>
+		body{
+			font-family: Cambria, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+			font-weight: 400;
+			font-size: 18pt;
+			margin:0;
+			background-color: black;
+		}
+		li{
+			border:solid 5px white;
+			border-radius: 10px;
+			display: inline-block;
+			float: left;
+			position: relative;
+			margin:0px;
+			padding: 0px;
+		}
+		li>a{
+
+			text-decoration: none;
+			display: block;
+			background-color: #B1956C;
+			width: 100px;
+			height: 30px;
+			color: #40382D;
+			text-align: center;
+			padding: 10px;
+			margin:0px;
+
+		}
+		li>a:hover{
+			background-color: #40382D;
+			color: #B1956C
+		}
+		
+		ul>li>ul>li{
+			display: none;
+			float: none;
+			margin:0px;
+			padding: 0px;
+		}
+		ul>li:hover>ul>li{
+			display: block;
+			float: none;
+			margin:0px;
+			padding: 0px;
+		}
+		ul>li>ul{
+			position: absolute;
+			left: 0px;
+			margin:0px;
+			padding: 0px;
+		}
+	</style>
+</head>
+<body>
+
+	<ul class="top">
+		<li><a href="#">Home</a>
+			<ul>
+				<li><a href="#">Link1</a></li>
+				<li><a href="#">Link2</a></li>
+				<li><a href="#">Link3</a></li>
+			</ul>
+		</li>
+		<li><a href="#">News</a>
+			<ul>
+				<li><a href="#">Link1</a></li>
+				<li><a href="#">Link2</a></li>
+				<li><a href="#">Link3</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Contact</a>
+			<ul>
+				<li><a href="#">Link1</a></li>
+				<li><a href="#">Link2</a></li>
+				<li><a href="#">Link3</a></li>
+			</ul>
+		</li>
+		<li><a href="#">About</a>
+			<ul>
+				<li><a href="#">Link1</a></li>
+				<li><a href="#">Link2</a></li>
+				<li><a href="#">Link3</a></li>
+			</ul>
+		</li>
+	</ul>
+</body>
+</html>
