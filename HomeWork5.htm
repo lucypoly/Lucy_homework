@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<title>My First Page</title>
+	<style>
+		body{
+			margin-left: 0px;
+			margin-right: 0px;
+			background: #006341;
+		}
+		header{
+			background: #F7F7F7;
+			height: 98px;
+		}
+		nav{
+			background: #F7F7F7;
+			height: 20px;
+			padding-top: 20px;
+		}
+		.menu{
+			background: #F7F7F7;
+			height: 46px;
+			padding-top: 10px;
+			padding-left: 200px;
+			padding-top: 30px;
+		}
+
+		section{
+			background: black;
+			height: 548px;
+			font-size: 33px;
+			font-weight: bold;
+			font-style: italic;
+			text-align: center;
+			padding-top: 130px;
+			padding-left: 250px;
+			padding-right: 250px;
+			color: white;
+			font-family: 'Georgia';
+
+		}
+
+		.join{
+			background: #272727;
+			height: 211px;
+		}
+		.social{
+			background: #F0F0F0;
+			height: 108px;
+		}
+
+		footer{
+			background: #F7F7F7;
+			height: 400px;
+		}
+		nav>ul{
+			float: right;
+			padding-right: 100px;
+		}
+		nav>ul>li{
+			display: inline-block;
+			padding: 5px;
+		}
+		li>a{
+			word-spacing: 0.5px;
+			color: #006341; 
+			font-size: 12pt;
+		}
+		form{
+			padding-left:  20px;
+		}
+		.menu li{
+			display: inline-block;
+			float: left;
+			position: relative;
+			margin:0px;
+			padding: 0px;
+		}
+		.menu li>a{
+
+			text-decoration: none;
+			display: block;
+			background-color: #F7F7F7;
+			width: 100px;
+			height: 48px;
+			color: #40382D;
+			text-align: center;
+			padding: 10px;
+			margin:0px;
+
+		}
+		.menu ul>li>ul>li>a{
+			text-align: left;
+		}
+		.menu li>a:hover{
+			background-color: #1E1E1E;
+			color: white;
+		}
+		
+		.menu ul>li>ul>li{
+			display: none;
+			float: none;
+		}
+		
+		.menu ul>li>ul>li>a{
+			background-color: #1E1E1E;
+			color:white;
+			width: 2000px;					
+		}
+
+		.menu ul>li:hover>ul>li{
+			display: block;
+
+		}
+		.menu ul>li>ul{
+			position: absolute;
+			margin:0px;
+			padding: 0px;
+
+		}
+		.menu ul>li:hover>ul>li{
+			display: block;
+			float: none;
+			margin:0px;
+			padding: 0px;
+		}
+		.menu ul>li>ul{
+			position: absolute;
+			left: 0px;
+			margin:0px;
+			padding: 0px;
+		}
+		
+		header img{
+			float: left;
+			position: absolute;
+			left: 150px;
+			top: 20px;
+		}
+		#read_on{
+			height: 10px;
+			width: 30px;
+			border: solid white 0.5px;
+			text-decoration:none;
+			color:white;
+			font-size: 10.5pt;
+			font-style: normal;
+			padding: 10px;
+			font-family: 'Helvetica';
+			border-radius: 3px;
+		}
+		.join img{
+			padding: 50px;
+		}
+		.join div{
+			float: left;
+			color:white;
+			font-family: 'Helvetica';
+			text-align: center;
+			font-size: 24pt;
+			padding: 20px;
+		}
+		.join div:first-child{
+			width: 500px;
+		}
+		.join a{
+			height: 10px;
+			width: 30px;
+			border: solid white 0.5px;
+			text-decoration:none;
+			color:white;
+			font-size: 10.5pt;
+			font-style: normal;
+			padding: 10px;
+			font-family: 'Helvetica';
+			border-radius: 3px;
+		}
+		.join_now{
+			background-color:  #DBBB7E;
+		}
+		.social img{
+			padding: 20px;
+			padding-left: 100px;
+		}
+		.social form{
+			float: right;
+			padding: 20px;
+		}
+		.social button{
+			background-color: #3D3935;
+			color: white;
+			font-family: 'Helvetica';
+			font-size: 10.5pt;
+			margin-right: 150px;
+			text-align: center;
+			padding: 5px;
+			padding-right: 25px;
+			padding-left: 25px;
+			font-weight: bold;
+		}
+		footer>ul{
+			float: left;
+			margin: 50px;
+			list-style: none;
+
+
+		}
+		footer>ul>li:first-child>a{
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+
+		footer>ul>li>a{
+			color: #3D3935;
+			font-family: 'inherit';
+		}
+		.menu_bot ul{
+			margin: 50px;
+			clear: both;
+		}
+		.menu_bot li{
+			float: left;
+			padding: 10px;
+			list-style: none;
+		}
+		.menu_bot li>a{
+			color: #3D3935;
+			font-family: 'inherit';
+		}
+
+
+
+
+
+	</style>
+</head>
+<body>
+	<header>
+		<img src="https://upload.wikimedia.org/wikipedia/ru/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1017px-Starbucks_Corporation_Logo_2011.svg.png" height="70px" width="70px">
+		<nav>
+			<ul>
+				<li>
+					<a href="#">
+						<span class="glyphicon glyphicon-lock"> My bag</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="glyphicon glyphicon-map-marker"> Find a store</span>
+					</a>
+				</li>
+				<li><span class="glyphicon glyphicon-option-vertical"></span></li>
+				<li>
+					<a href="#">Sign in</a>
+				</li>
+				<li>
+					<form>
+						<input type="search" name="googlesearch">
+					</form>
+				</li>
+				<li>
+					<button type="button" class="btn btn-default btn-sm">
+						<span class="glyphicon glyphicon-search"></span>
+					</button>
+				</li>
+
+			</ul>
+		</nav>
+		<div class="menu">
+			<ul class="top">
+				<li><a href="#">Home</a>
+					<ul>
+						<li><a href="#">Link1</a></li>
+						<li><a href="#">Link2</a></li>
+						<li><a href="#">Link3</a></li>
+					</ul>
+
+				</li>
+				<li><a href="#">News</a>
+					<ul>
+						<li><a href="#">Link1</a></li>
+						<li><a href="#">Link2</a></li>
+						<li><a href="#">Link3</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Contact</a>
+					<ul>
+						<li><a href="#">Link1</a></li>
+						<li><a href="#">Link2</a></li>
+						<li><a href="#">Link3</a></li>
+					</ul>
+				</li>
+				<li><a href="#">About</a>
+					<ul>
+						<li><a href="#">Link1</a></li>
+						<li><a href="#">Link2</a></li>
+						<li><a href="#">Link3</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<section>We believe in working to achieve balance between profitability and social impact. For Starbucks, that belief shapes our choices every day. And as citizens, our choices matter more now than ever.<br>
+		<a href="#" id="read_on">READ ON</a>
+	</section>
+	<div class="join">
+		<div>
+			<img src="http://www.starbucks.com/static/images/rewards/MSR_logo-white.png">
+		</div>
+		<div>
+			My Starbucks Rewards<br>Collect stars and earn rewards<br>
+			<a href="#" id="join_now">JOIN NOW</a>&nbsp;<a href="#">SIGN IN</a>
+
+		</div>
+	</div>
+	<div class="social">
+		<img src="https://psv4.vk.me/c414724/u6454013/docs/c484373181da/Screenshot_2.png?extra=N9jASpni2Q9c3I5znn9SjNI6Bt0wGLQAQtEC_iU2K7g1dxwEBfTusY8BTOj7yTKL9YjV5JF_lPqe_ukncDsys7ZnblDswlhK8FnEskPjSMchBqWXhb_CQPv8VpAoSbha4x2Q353O">
+		<form>
+			Join our email list &nbsp;<input type="text" name="email">
+			<button type="button">
+				GET STARTED				
+			</button>
+		</form>
+	</div>
+	<footer>
+		<ul>
+			<li><a href="#">Text Text</a></li>
+			<li><a href="#">Text Text</a></li>
+			<li><a href="#">Text Text</a></li>
+			<li><a href="#">Text Text</a></li>
+			<li><a href="#">Text Text</a></li>
+		</ul>
+		<ul>
+			<li><a href="#">Text Text</a></li>
+			<li><a href="#">Text Text</a></li>
+			<li><a href="#">Text Text</a></li>
+			<li><a href="#">Text Text</a></li>
+			<li><a href="#">Text Text</a></li>
+		</ul>
+		<ul>
+			<li><a href="#">Text Text</a></li>
+			<li><a href="#">Text Text</a></li>
+			<li><a href="#">Text Text</a></li>
+			<li><a href="#">Text Text</a></li>
+			<li><a href="#">Text Text</a></li>
+		</ul>
+		<ul>
+			<li><a href="#">Text Text</a></li>
+			<li><a href="#">Text Text</a></li>
+			<li><a href="#">Text Text</a></li>
+			<li><a href="#">Text Text</a></li>
+			<li><a href="#">Text Text</a></li>
+		</ul>
+		<ul>
+			<li><a href="#">Text Text</a></li>
+			<li><a href="#">Text Text</a></li>
+			<li><a href="#">Text Text</a></li>
+			<li><a href="#">Text Text</a></li>
+			<li><a href="#">Text Text</a></li>
+		</ul>
+		<div class="menu_bot">
+
+			<ul>
+				<li><a href="#">Text Text</a></li>
+				<li><a href="#">Text Text</a></li>
+			</ul>
+			<ul>
+				<li><a href="#">Text Text</a></li>
+				<li><a href="#">Text Text</a></li>
+				<li><a href="#">Text Text</a></li>
+				<li><a href="#">Text Text</a></li>
+				<li><a href="#">Text Text</a></li>
+				<li><a href="#">Text Text</a></li>
+			</ul>
+		</div>
+
+	</footer>
+</body>
+<!--http://www.w3schools.com/icons/bootstrap_icons_glyphicons.asp-->
