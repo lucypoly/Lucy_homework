@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+</head>
+<style type="text/css">
+	body{
+		font-family: 'Verdana', 'Arial', 'Times New Roman';	 
+	}
+	div.form	{
+		width: 510px;
+		height: 250px;
+		background:url("form.png");
+		background-size: cover;
+		padding-top: 20px;
+		padding-left: 20px;
+		box-sizing: border-box;
+		border-radius: 20px;
+	}
+	input#name{
+		background:url('man.png')  #F0F0F0 no-repeat;
+		background-position-x: 137px;
+		background-position-y: 4px;
+	}
+	input#pass{
+		background:url('lock.png')  #F0F0F0 no-repeat;
+		background-position-x: 137px;
+		background-position-y: 4px;
+	}
+	input#name, input#pass{
+		border-radius: 10px;
+		background-color: #F0F0F0;
+		width: 160px;
+		font-size: 16pt;
+		padding: 5px;	
+	}
+	input#name:hover, input#pass:hover{
+		box-shadow: 13px 13px 23px -4px #888881 inset;
+	}
+	label{
+		font-size: 11pt;
+		color:white;
+	}
+	a{
+		text-decoration: none;
+		color:white;
+		font-size: 11pt;
+		color:#CCCCCC;
+	}
+	input#go{
+		border:none;
+		background-color: transparent;
+		color:white;
+		font-size: 20pt; 
+		float: right;
+		padding-top: 180px;
+		padding-bottom: 20px; 
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	input#go:hover{
+		text-shadow: 5px 5px 7px white;
+	}
+	span{
+		font-style: italic;
+	}
+	label#login{
+		font-size: 18pt;
+		padding: 10px;
+	}
+	div.login{
+		padding-bottom: 40px;
+	}
+	div.pass, div.name{
+		float: left;
+		padding: 10px;
+	}
+	div.remember, div.forgot{
+		float: left;
+		padding: 10px;
+	}
+	div.remember{
+		clear: left;
+	}
+
+</style>
+<body>
+	<div class="form">
+		<form id="form">
+			<div class="go">
+				<input type="submit" value="GO" name="go" id="go"></input>
+			</div>
+			<div class="login">
+				<label for="form" id="login">LOGIN</label>
+			</div>
+			<div class="name">
+				<label for="name">Useranme:<br><br>
+					<input type="text" value="azmind" name="username" id="name"></input>
+				</label>
+			</div>
+			<div class="pass">
+				<label for="pass">Password:<br><br>
+					<input type="password" value="pass" name="password" id="pass"></input>
+				</label>
+			</div>
+			<div class="remember">
+				<input type="radio" value="Remember me" name="remember" id="remember"></input>
+				<label for="remember">Remember me</label>
+			</div>
+			<div class="forgot">
+				<a href="#">Forgot <span>username</span> or <span>password</span>?</a>
+			</div>
+		</form>
+	</div>
+
+</body>
+</html>
+<!--http://www.w3schools.com/icons/bootstrap_icons_glyphicons.asp-->
