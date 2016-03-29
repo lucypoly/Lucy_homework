@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+</head>
+<style type="text/css">
+	div#out{
+		height: 336px;
+		width: 670px;
+		box-shadow: -5px -5px 150px -55px black inset;
+	}
+	div#in{
+		height: 255px;
+		width: 370px;
+		padding-left: 157px;
+		padding-right: 126px;
+		padding-top: 33px;
+		padding-bottom: 47px;
+	}
+	div#label{
+		font-family: 'Vivaldi';
+		font-size: 26pt;
+		text-align: center;
+	}
+	input#name, input#pass{
+		width: 350px;
+		background-color: black;
+		color:#808080;
+		padding:10px;
+		font-size: 14pt;
+		font-family: 'Calibri';
+		border-radius: 2px;
+	}
+	div{
+		margin-bottom: 10px;
+	}
+	input#login{
+		box-shadow: -21px -35px 30px -44px black inset;
+		height: 42px;
+		width: 98px;
+		font-family: 'Calibri';
+		font-size: 14pt;
+		border-color: #C4C4C4;
+		border-radius: 3px;
+		background-color: white;
+		margin-right: 120px;
+	}
+	a{
+		text-decoration: none;
+		color:black;
+		font-family: 'Calibri';
+		font-size: 13pt;
+	}
+</style>
+<body>
+	<div id="out">
+		<div id="in">
+			<form id="form">
+				<div id="label">
+					<label for="form">Login Page Template</label>
+				</div>
+				<div>
+					<input type="text" name="name" value="User name" id="name"></input>
+				</div>
+				<div>
+					<input type="password" name="pass" value="012345689" id="pass"></input>
+				</div>
+				<div>
+					<input type="submit" name="login" value="Login >" id="login"></input>
+					<a href="#">Forgot password?</a>
+				</div>
+			</form>
+		</div>
+
+	</body>
