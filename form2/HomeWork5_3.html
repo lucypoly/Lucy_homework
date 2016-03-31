@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+</head>
+<style type="text/css">
+	@font-face {
+		font-family: 'herr';
+		src: url('fonts/herrvonmuellerhoff-regular-webfont.eot');
+		src: url('fonts/herrvonmuellerhoff-regular-webfont.eot?#iefix') format('embedded-opentype'),
+		url('fonts/herrvonmuellerhoff-regular-webfont.woff2') format('woff2'),
+		url('fonts/herrvonmuellerhoff-regular-webfont.woff') format('woff'),
+		url('fonts/herrvonmuellerhoff-regular-webfont.ttf') format('truetype'),
+		url('fonts/herrvonmuellerhoff-regular-webfont.svg#herr_von_muellerhoffregular') format('svg');
+		font-weight: normal;
+		font-style: normal;
+	}
+	div#out{
+		height: 336px;
+		width: 670px;
+		box-shadow: -5px -5px 150px -55px black inset;
+	}
+	div#in{
+		height: 255px;
+		width: 425px;
+		padding-left: 150px;
+		padding-right: 126px;
+		padding-top: 45px;
+		padding-bottom: 47px;
+	}
+	div#label{
+		font-family: 'herr';
+		font-size: 36pt;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	input#name, input#pass{
+		width: 350px;
+		background-color: black;
+		padding:10px;
+		font-size: 14px;
+		font-family: "Lucida Sans Unicode";
+		color: rgb(128, 128, 128);
+		border-radius: 2px;
+	}
+	input#name{
+		background:url('mann.png')  black no-repeat;
+		background-position-x: 340px;
+		background-position-y: 14px;
+	}
+	input#pass{
+		background:url('lockk.png')  black no-repeat;
+		background-position-x: 340px;
+		background-position-y: 14px;
+	}
+	
+
+	input#name:hover{
+		box-shadow:  -25px -40px 131px -45px white inset;
+	}
+	input#pass:hover{
+		box-shadow:  -25px -40px 131px -45px white inset;
+	}
+
+	input#login{
+		height: 42px;
+		width: 98px;
+		border-color: #C4C4C4;
+		border-radius: 3px;
+		background-color: white;
+		margin-right: 120px;
+		font-size: 14px;
+		font-family: "Lucida Sans Unicode";
+		color: rgb(0, 0, 0);
+		margin-right: 140px;
+		box-shadow: -21px -35px 30px -47px black inset;
+	}
+
+	input#login:hover{
+		box-shadow: -21px -35px 30px -44px black inset;
+	}
+	a{
+		text-decoration: none;
+		font-size: 14px;
+		font-family: "Lucida Sans Unicode";
+		color: rgb(51, 51, 51);
+	}
+
+	a:hover{
+		text-shadow: 5px 5px 7px black;
+	}
+	img{
+		position: relative;
+		float: right;
+		right: 26px;
+		top: -20px;	
+	}
+	div{
+		margin-bottom: 20px;
+	}
+	
+
+
+</style>
+<body>
+	<div id="out">
+		<div id="in">
+			<form id="form">
+				<div id="label">
+					<label for="form">Login Page Template</label>
+				</div>
+				<div>
+					<img src="no.png">
+					<input type="text" name="name" value="User name" id="name"></input>
+
+				</div>
+				<div>
+					<img src="ok.png">
+					<input type="password" name="pass" value="012345689" id="pass"></input>
+					
+				</div>
+				<div>
+					<input type="submit" name="login" value="Login >" id="login"></input>
+					<a href="#">Forgot password?</a>
+				</div>
+			</form>
+		</div>
+
+	</body>
