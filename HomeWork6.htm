@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>border-image</title>
+	<style>
+		.green {
+			display: -webkit-box;
+			display: -moz-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			flex-direction:column;
+			justify-content:center;
+			width: 1000px;
+			margin: 10px;
+			border: 10px;
+			border-image: url("http://pageborders.org/files/images//green-heart-border-thumbnail.png") 30/0.7 repeat repeat;
+		}
+		.yellow {
+			margin: 2px;
+			border: 10px;
+			border-image: url("http://pageborders.org/files/images//yellow-heart-border-thumbnail.png") 30/0.7 repeat repeat;
+		}
+		.red{
+			display: -webkit-box;
+			display: -moz-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;	
+			flex-direction:row;
+			justify-content:center;	
+			height: 80px;
+			width: 95%;
+			margin: 10px;
+			border: 10px;
+			border-image: url("http://pageborders.org/files/images//red-heart-border-thumbnail.png") 30/0.7 repeat repeat;
+		}
+		.blue{
+			display: -webkit-box;
+			display: -moz-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+		flex-direction:column;
+		justify-content:center;
+			margin: 10px;
+			border: 10px;
+			height: 45px;
+			border-image: url("http://pageborders.org/files/images//blue-heart-border-thumbnail.png") 30/0.7 repeat repeat;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="green">
+		<div class="red">
+			<div class="blue" style="width: 22%"></div>
+			<div class="blue" style="width: 43%"></div>
+			<div class="blue" style="width: 22%">
+				<div class="yellow"></div>
+				<div class="yellow"></div>
+			</div>
+		</div>
+		<div class="red" style="height: 50px">
+			<div class="blue" style="width: 22%; height: 35%"></div>
+			<div class="blue" style="width: 19.5%; height: 35%"></div>
+			<div class="blue" style="width: 19.5%; height: 35%"></div>
+			<div class="blue" style="width: 22%; height: 35%"></div>
+		</div>
+		<div class="red" style="height: 700px">
+			<div class="blue" style="height: 95%; width: 22%"></div>
+			<div class="blue" style="height: 95%; width: 69%">
+				<div class="yellow" style="height: 75%"></div>
+				<div class="yellow" style="height: 18%"></div>
+			</div>
+		</div>
+		<div class="red">
+			<div class="blue" style="width: 22%">
+				<div class="yellow"></div>
+				<div class="yellow"></div>
+			</div>
+			<div class="blue" style="width: 43%"></div>
+			<div class="blue" style="width: 22%"></div>
+		</div>
+	</div>
+</body>
+</html>
