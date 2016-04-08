@@ -48,18 +48,15 @@
 	}
 	.nav>ul{
 		list-style: none;
-		display: flex;
-		flex-direction:row;
 		padding: 0px;
 		margin: 0 auto;
 		display: flex;
 		flex-direction: row; 
 		justify-content: center;
-		flex-wrap: wrap;
+		
 	}
 	.nav>ul>li{
-		padding-left:30px; 
-		margin: 5px;
+		margin: 10px;
 	}
 	.nav>ul>li>a{
 		text-decoration: none;
@@ -73,6 +70,7 @@
 	.jambotron{
 		width: 100%;
 		background-image: url(jumbotron.png);
+		background-size: cover;
 		min-height: 300px;
 	}
 	.caption{
@@ -108,12 +106,16 @@
 		margin-bottom: 30px;
 		margin-right: 10px;
 	}
+	#submit{
+		align-self: flex-end;
+	}
 	.section1, .section2, .section3 {
 		width: 100%;
 		text-align: center;
 		padding-top: 3%;
 		padding-bottom: 3%;
 	}
+
 	.section1 div, .section2 div, .section3 div{
 		padding-top: 0.5%;
 		padding-bottom: 0.5%;
@@ -217,15 +219,22 @@
 		padding: 10px;
 		margin: 10px;
 	}
+	.contacts .Col1 form{
+		text-align: right;
+			}
 
 	.contacts .Col1 #name, 	.contacts .Col1 #email{
 		width: 40%;
 	}
 	.contacts .Col1 textarea{
-		width: 100%;
+		width: 90%;
 			}
 	div.Col2{
 		text-align: left;
+	}
+	address a{
+		text-decoration: none;
+		color: black;
 	}
 	footer{
 		background-color: #1E3C50;
@@ -234,15 +243,21 @@
 		flex-direction: row;
 		width: 100%;
 			}
-	footer div.col1{
-		width: 45%;		
+	footer div.col1, footer div.col2{
+		width: 45%;	
+		padding: 10px;
+		margin: 10px;	
 	}
-	footer div.col2{
-		width: 45%;			
-	}
-	footer div.col2 img{
+	
+	footer div.col2 a{
 		background-color:#00BD9B; 
-			}
+		display: block;
+		width: 50px;
+		height: 50px;
+		float: right;
+		line-height: 50px;
+		text-align: center;
+	}
 
 
 	@media screen and (max-width: 625px) {
@@ -272,5 +287,16 @@
 			margin-bottom: 15px;
 			margin-top: 15px;
 		}
+		.nav>ul{
+		list-style: none;
+		display: flex;
+		flex-direction:row;
+		padding: 0px;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: row; 
+		justify-content: center;
+		flex-wrap: wrap;
+	}
 	}
 
