@@ -21,7 +21,7 @@
 }
 
 .navbar-default .navbar-toggle:hover .icon-bar, .navbar-default .navbar-toggle:focus .icon-bar {
-    background-color: white;
+	background-color: white;
 }
 .jumbotron{
 	background-image: url(jumbotron.png);
@@ -40,16 +40,16 @@
 	border:solid #00BD9D 2px;
 }
 .jumbotron .glyphicon.glyphicon-menu-down{
-font-size: 30px;
-border-radius: 22px;
-padding: 5px;
-background-color: white;
-color: #473C38;
-font-weight: 900;
+	font-size: 30px;
+	border-radius: 22px;
+	padding: 5px;
+	background-color: white;
+	color: #473C38;
+	font-weight: 900;
 }
 .jumbotron .glyphicon.glyphicon-menu-down:hover{
-background-color:#00BD9D ;
-color: white;
+	background-color:#00BD9D ;
+	color: white;
 }
 #portfolio{
 	background-color: white;
@@ -95,9 +95,17 @@ color: white;
 	color: white;
 }
 #footer>.container{
-	margin:20px;
+	padding: 2em 0;
 }
 #footer a{
-		background-color:#00BD9B; 
-		padding: 10px;
+	background-color:#00BD9B; 
+	padding: 10px;
+}
+#portfolio a.btn{
+	margin: 5px;
+}
+@media screen and (max-width:350px){
+	.navbar-brand > .pull-right{
+		display: none;
 	}
+}
