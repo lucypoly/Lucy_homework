@@ -29,9 +29,7 @@
 	color: white;
 	margin-bottom: 0px;
 }
-.jumbotron>.container{
-	max-width: 800px;
-}
+
 .jumbotron .btn-primary{
 	background-color: transparent;
 	border:solid white 2px;
